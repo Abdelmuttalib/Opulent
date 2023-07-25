@@ -6,8 +6,8 @@ export default function ToastProvider() {
   return (
     <Toaster
       position="top-center"
-      richColors
-      expand
+      // richColors
+      // expand
       visibleToasts={4}
       closeButton
     />

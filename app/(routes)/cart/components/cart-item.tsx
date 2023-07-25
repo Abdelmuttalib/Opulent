@@ -16,7 +16,6 @@ const CartItem: React.FC<CartItemProps> = ({ data }) => {
 
   const onRemove = () => {
     cart.removeItemFromCart(data.id);
-    toast.success("Item removed from cart.");
   };
 
   return (

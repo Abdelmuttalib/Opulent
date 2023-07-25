@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   darkMode: ["class"],
   content: ["./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}"],
@@ -11,7 +13,24 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-rubik)", ...defaultTheme.fontFamily.sans],
+        header: ["var(--font-urbanist)", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
+        brand: {
+          DEFAULT: "#0c0c0c",
+          50: "#e6e6e6",
+          100: "#cecece",
+          200: "#b6b6b6",
+          300: "#9d9d9d",
+          400: "#858585",
+          500: "#6d6d6d",
+          600: "#545454",
+          700: "#3c3c3c",
+          800: "#242424",
+          900: "#0c0c0c",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Providers from "@/providers";
-
-const urbanist = Urbanist({ subsets: ["latin"] });
+import { urbanist, rubik } from "@/next-fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Store",
@@ -20,12 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>
+      <body
+        className={`${urbanist.variable} ${rubik.variable} font-sans flex flex-col selection:bg-brand selection:text-white`}
+      >
         {/* Providers */}
         <Providers />
         {/*  */}
         <Navbar />
-        <main>{children}</main>
+        <main className="min-h-main pb-40">{children}</main>
         <Footer />
       </body>
     </html>

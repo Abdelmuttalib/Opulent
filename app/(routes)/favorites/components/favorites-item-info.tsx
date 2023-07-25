@@ -1,8 +1,8 @@
-interface CartItemInfoProps {
+interface FavoritesItemInfoProps {
   product: Record<string, any>;
 }
 
-const CartItemInfo: React.FC<CartItemInfoProps> = ({ product }) => {
+const FavoritesItemInfo: React.FC<FavoritesItemInfoProps> = ({ product }) => {
   return (
     <div>
       <div className="flex justify-between">
@@ -20,4 +20,4 @@ const CartItemInfo: React.FC<CartItemInfoProps> = ({ product }) => {
   );
 };
 
-export default CartItemInfo;
+export default FavoritesItemInfo;
