@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "./ui/container";
+import Image from "next/image";
 
 // #eaeef3
 // #212121
@@ -112,7 +113,7 @@ export default function Footer() {
                     {links.map(({ label, href }) => (
                       <li
                         key={label + href}
-                        className="hover:underline cursor-pointer"
+                        // className="hover:underline cursor-pointer"
                       >
                         {label}
                       </li>
@@ -121,6 +122,12 @@ export default function Footer() {
                 </nav>
               </div>
             ))}
+            <div className="flex items-center gap-1">
+              <h6 className="text-brand-400">Powered By</h6>
+              <div className="relative w-14 h-5">
+                <Image src="/stripe-logo.svg" alt="stripe logo" fill />
+              </div>
+            </div>
 
             {/* Payments */}
             {/* <div>

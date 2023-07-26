@@ -20,7 +20,7 @@ export default function MainNav({ data }: MainNavProps) {
   }));
 
   return (
-    <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
+    <nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden sm:flex">
       {routes.map((route) => (
         <Link
           key={route.href}

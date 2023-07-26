@@ -18,7 +18,7 @@ function DiscountsBar() {
         <p className="text-brand-50 text-xs lg:text-sm">
           Sign up and <span className="font-medium">GET 20% OFF</span> for your
           first order.{" "}
-          <span className="underline font-medium">
+          <span className="underline font-medium hidden sm:inline-block">
             Explore our new collections and shop now.
           </span>
         </p>
