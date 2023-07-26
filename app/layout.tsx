@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-main pb-40">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
