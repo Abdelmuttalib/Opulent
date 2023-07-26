@@ -7,8 +7,8 @@ import Providers from "@/providers";
 import { urbanist, rubik } from "@/next-fonts/fonts";
 
 export const metadata: Metadata = {
-  title: "Store",
-  description: "Shop Store",
+  title: "Opulent",
+  description: "opulent store",
 };
 
 export default function RootLayout({
