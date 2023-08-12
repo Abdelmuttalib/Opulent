@@ -12,7 +12,7 @@ export default function Billboard({ data }: BillboardProps) {
           style={{
             // backgroundImage: `url(${data?.imageUrl})`,
             backgroundImage: `url(${data?.imageUrl})`,
-            filter: "brightness(0.5)",
+            filter: "brightness(0.7)",
           }}
           className="rounded-lg absolute z-10 w-full h-full aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover bg-center backdrop-blur-sm"
         ></div>
