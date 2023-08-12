@@ -31,12 +31,13 @@ export default async function Navbar() {
   const categories = await actions.categories.getCategories();
 
   return (
-    <div>
-      <DiscountsBar />
+    <div className="sticky top-0 bg-white/[0.5] backdrop-blur-md z-30">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex w-full justify-between h-16 items-center">
+        <div className="px-4 sm:px-6 lg:px-8 flex w-full justify-between h-20 items-center">
           <Link href="/" className="flex gap-x-2">
-            <h3 className="font-bold text-2xl text-[#0c0c0c]">Opulent</h3>
+            <h3 className="font-light text-4xl text-brand hover:bg-brand hover:text-white ease-in-out duration-300">
+              opulent
+            </h3>
           </Link>
           <MainNav data={categories} />
           <NavbarActions />

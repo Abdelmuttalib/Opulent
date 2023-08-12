@@ -1,6 +1,7 @@
 import { Product } from "@/types";
 import NoResults from "../no-results";
 import ProductCard from "./product-card";
+import { Skeleton } from "../ui/skeleton";
 
 interface ProductsListProps {
   title: string;
@@ -17,6 +18,20 @@ export default function ProductsList({ title, products }: ProductsListProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-14 sm:gap-4">
         {products.map((item) => (
           <ProductCard key={item.id} data={item} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function ProductsListLoadingUI() {
+  return (
+    <div className="space-y-4 py-16">
+      <Skeleton className="w-72 h-9" />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-14 sm:gap-4">
+        {[1, 2, 3, 4].map((n) => (
+          <Skeleton key={n} className="w-full aspect-square" />
         ))}
       </div>
     </div>

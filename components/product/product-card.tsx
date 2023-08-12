@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { MouseEvent, MouseEventHandler } from "react";
-import { Expand, Heart, ShoppingCart } from "lucide-react";
+import { Expand, Heart, ShoppingBag, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import IconButton from "@/components/ui/icon-button";
@@ -88,13 +88,16 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
           </div>
           <div className="flex items-center gap-3">
             <Heart
-              className={cn("text-brand w-6 h-6 cursor-pointer", {
+              className={cn("text-brand w-5 h-5 md:w-6 md:h-6 cursor-pointer", {
                 "fill-red-500 text-red-500": isFavorite,
               })}
               onClick={onFavorite}
             />
-            <button onClick={onAddToCart} className="bg-brand rounded p-3">
-              <ShoppingCart size={24} className="text-gray-300" />
+            <button
+              onClick={onAddToCart}
+              className="bg-brand rounded-sm p-1.5 md:p-2.5"
+            >
+              <ShoppingBag className="text-gray-300 w-5 md:w-6" />
             </button>
           </div>
         </div>

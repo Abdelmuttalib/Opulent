@@ -3,12 +3,12 @@ import { Urbanist, Rubik } from "next/font/google";
 export const urbanist = Urbanist({
   subsets: ["latin"],
   variable: "--font-urbanist",
-  display: "swap",
+  // display: "swap",
 });
 export const rubik = Rubik({
   subsets: ["latin"],
   variable: "--font-rubik",
-  display: "swap",
+  // display: "swap",
 });
 
 // const bebas = Bebas_Neue({

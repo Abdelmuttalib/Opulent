@@ -20,14 +20,16 @@ export default function MainNav({ data }: MainNavProps) {
   }));
 
   return (
-    <nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden sm:flex">
+    <nav className="mx-6 items-center space-x-4 lg:space-x-6 hidden sm:flex text-sm md:text-base">
       {routes.map((route) => (
         <Link
           key={route.href}
           href={route.href}
           className={cn(
-            "font-medium transition-colors hover:text-black",
-            route.active ? "text-black" : "text-neutral-500"
+            "transition-colors hover:text-brand",
+            route.active
+              ? "text-brand underline decoration-2 decoration-brand underline-offset-4"
+              : "text-brand"
           )}
         >
           {route.label}

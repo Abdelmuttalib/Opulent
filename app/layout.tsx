@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Providers from "@/providers";
 import { urbanist, rubik } from "@/next-fonts/fonts";
+import TailwindIndicator from "@/components/tailwind-indicator";
 
 export const metadata: Metadata = {
   title: "Opulent",
@@ -29,6 +30,8 @@ export default function RootLayout({
         <main className="min-h-main pb-40">{children}</main>
         <Footer />
         <Analytics />
+        {/* tailwind */}
+        <TailwindIndicator />
       </body>
     </html>
   );
