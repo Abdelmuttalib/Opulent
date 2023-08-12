@@ -83,6 +83,14 @@ export default function Footer() {
                 Specializes in providing high-quality, stylish products for your
                 wardrope
               </p>
+              <div className="flex items-center gap-1 self-end mt-6">
+                <h6 className="text-brand-700">Powered By</h6>
+                <div className="relative w-14 h-5">
+                  <Link href="https://stripe.com/">
+                    <Image src="/stripe-logo.svg" alt="stripe logo" fill />
+                  </Link>
+                </div>
+              </div>
             </div>
             {/* 2 */}
             {/* {footerLinks.map(({ title, links }) => (
@@ -104,12 +112,6 @@ export default function Footer() {
                 </nav>
               </div>
             ))} */}
-            {/* <div className="flex items-center gap-1 self-end">
-              <h6 className="text-brand-400">Powered By</h6>
-              <div className="relative w-14 h-5">
-                <Image src="/stripe-logo.svg" alt="stripe logo" fill />
-              </div>
-            </div> */}
 
             {/* Payments */}
             {/* <div>
