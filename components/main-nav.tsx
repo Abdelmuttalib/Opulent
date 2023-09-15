@@ -26,9 +26,9 @@ export default function MainNav({ data }: MainNavProps) {
           key={route.href}
           href={route.href}
           className={cn(
-            "transition-colors hover:text-brand",
+            "transition-colors hover:bg-brand hover:text-white ease-in-out duration-300 px-1",
             route.active
-              ? "text-brand underline decoration-2 decoration-brand underline-offset-4"
+              ? "text-white bg-brand underline decoration-2 decoration-brand underline-offset-4"
               : "text-brand"
           )}
         >
