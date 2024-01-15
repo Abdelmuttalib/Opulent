@@ -1,7 +1,7 @@
 import Container from "@/components/ui/container";
 // import Skeleton from "@/components/ui/skeleton";
 
-const Loading = () => {
+export default function Loading() {
   return (
     <Container>
       <div className="w-full h-full p-8">
@@ -24,6 +24,4 @@ const Loading = () => {
       </div>
     </Container>
   );
-};
-
-export default Loading;
+}

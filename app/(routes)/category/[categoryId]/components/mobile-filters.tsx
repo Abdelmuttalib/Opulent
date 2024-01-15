@@ -15,7 +15,7 @@ interface MobileFiltersProps {
   colors: Color[];
 }
 
-const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
+export default function MobileFilters({ sizes, colors }: MobileFiltersProps) {
   const [open, setOpen] = useState(false);
 
   const onOpen = () => setOpen(true);
@@ -76,6 +76,4 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({ sizes, colors }) => {
       {/* </Transition> */}
     </>
   );
-};
-
-export default MobileFilters;
+}

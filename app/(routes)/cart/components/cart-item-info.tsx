@@ -2,7 +2,7 @@ interface CartItemInfoProps {
   product: Record<string, any>;
 }
 
-const CartItemInfo: React.FC<CartItemInfoProps> = ({ product }) => {
+export default function CartItemInfo({ product }: CartItemInfoProps) {
   return (
     <div>
       <div className="flex justify-between">
@@ -18,6 +18,4 @@ const CartItemInfo: React.FC<CartItemInfoProps> = ({ product }) => {
       <p className="mt-1 text-sm font-medium text-gray-900">{product.price}</p>
     </div>
   );
-};
-
-export default CartItemInfo;
+}

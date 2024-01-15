@@ -13,7 +13,7 @@ interface FilterProps {
   valueKey: string;
 }
 
-const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
+export default function Filter({ data, name, valueKey }: FilterProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -63,6 +63,4 @@ const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
       </div>
     </div>
   );
-};
-
-export default Filter;
+}

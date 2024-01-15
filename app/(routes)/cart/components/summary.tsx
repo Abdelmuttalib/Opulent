@@ -9,7 +9,7 @@ import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
 import { toast } from "sonner";
 
-const Summary = () => {
+export default function Summary() {
   const searchParams = useSearchParams();
   const items = useCart((state) => state.items);
   const clearCart = useCart((state) => state.clearCart);
@@ -58,6 +58,4 @@ const Summary = () => {
       </Button>
     </div>
   );
-};
-
-export default Summary;
+}

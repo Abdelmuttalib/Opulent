@@ -1,14 +1,8 @@
-import Gallery, { GalleryLoadingUI } from "@/components/gallery";
+import Gallery from "@/components/gallery";
 import Container from "@/components/ui/container";
 import actions from "@/actions";
-import ProductInfo, {
-  ProductInfoLoadingUI,
-} from "@/components/product/product-info";
-import ProductsList, {
-  ProductsListLoadingUI,
-} from "@/components/product/products-list";
-import { Skeleton } from "@/components/ui/skeleton";
-import { cn } from "@/lib/utils";
+import ProductInfo from "@/components/product/product-info";
+import ProductsList from "@/components/product/products-list";
 
 export const revalidate = 0;
 
@@ -53,4 +47,3 @@ export default async function ProductPage({ params }: ProductPageProps) {
     </div>
   );
 }
-

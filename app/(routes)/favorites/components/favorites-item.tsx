@@ -12,7 +12,7 @@ interface FavoritesItemProps {
   data: Product;
 }
 
-const FavoritesItem: React.FC<FavoritesItemProps> = ({ data }) => {
+export default function FavoritesItem({ data }: FavoritesItemProps) {
   const favorites = useFavorites();
 
   const onRemove = () => {
@@ -58,6 +58,4 @@ const FavoritesItem: React.FC<FavoritesItemProps> = ({ data }) => {
       </div>
     </li>
   );
-};
-
-export default FavoritesItem;
+}

@@ -18,10 +18,10 @@ interface CategoryPageProps {
   };
 }
 
-const CategoryPage: React.FC<CategoryPageProps> = async ({
+export default async function CategoryPage({
   params,
   searchParams,
-}) => {
+}: CategoryPageProps) {
   const products = await actions.products.getProducts({
     categoryId: params.categoryId,
     colorId: searchParams.colorId,
@@ -55,6 +55,4 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
       </Container>
     </div>
   );
-};
-
-export default CategoryPage;
+}

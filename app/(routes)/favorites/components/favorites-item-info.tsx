@@ -2,7 +2,7 @@ interface FavoritesItemInfoProps {
   product: Record<string, any>;
 }
 
-const FavoritesItemInfo: React.FC<FavoritesItemInfoProps> = ({ product }) => {
+export default function FavoritesItemInfo({ product }: FavoritesItemInfoProps) {
   return (
     <div>
       <div className="flex justify-between">
@@ -18,6 +18,4 @@ const FavoritesItemInfo: React.FC<FavoritesItemInfoProps> = ({ product }) => {
       <p className="mt-1 text-sm font-medium text-gray-900">{product.price}</p>
     </div>
   );
-};
-
-export default FavoritesItemInfo;
+}

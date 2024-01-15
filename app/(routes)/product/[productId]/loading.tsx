@@ -1,6 +1,4 @@
 import Container from "@/components/ui/container";
-import { Skeleton } from "@/components/ui/skeleton";
-import { cn } from "@/lib/utils";
 import { GalleryLoadingUI } from "@/components/gallery";
 import { ProductInfoLoadingUI } from "@/components/product/product-info";
 import { ProductsListLoadingUI } from "@/components/product/products-list";

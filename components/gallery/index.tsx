@@ -82,7 +82,7 @@ export default Gallery;
 export function GalleryLoadingUI() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 my-6">
-      {[1, 2, 3, 4].map((n, indx) => (
+      {[1, 2, 3, 4].map((n) => (
         <div
           key={n}
           className="aspect-square relative h-full w-full overflow-hidden"

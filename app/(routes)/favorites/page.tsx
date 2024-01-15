@@ -9,7 +9,7 @@ import FavoritesItem from "./components/favorites-item";
 
 export const revalidate = 0;
 
-const FavoritesPage = () => {
+export default function FavoritesPage() {
   const [isMounted, setIsMounted] = useState(false);
   const favorites = useFavorites();
 
@@ -42,6 +42,4 @@ const FavoritesPage = () => {
       </Container>
     </div>
   );
-};
-
-export default FavoritesPage;
+}
