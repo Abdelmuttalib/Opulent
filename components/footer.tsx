@@ -76,21 +76,13 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-44">
             {/* 1 */}
             <div className="lg:h-full selection:bg-brand-800 selection:text-brand">
-              <h5 className="text-7xl sm:text-9xl mb-2 text-transparent bg-clip-text bg-gradient-to-b from-white via-brand-200 to-brand font-light">
+              <h5 className="text-7xl sm:text-8xl mb-2 text-transparent bg-clip-text bg-gradient-to-b from-white via-brand-200 to-brand font-light">
                 opulent
               </h5>
-              <p className="text-brand-700 text-lg sm:text-xl">
+              <p className="text-brand-600 text-lg">
                 Specializes in providing high-quality, stylish products for your
                 wardrope
               </p>
-              <div className="flex items-center gap-1 self-end mt-6">
-                <h6 className="text-brand-700">Powered By</h6>
-                <div className="relative w-14 h-5">
-                  <Link href="https://stripe.com/">
-                    <Image src="/stripe-logo.svg" alt="stripe logo" fill />
-                  </Link>
-                </div>
-              </div>
             </div>
             {/* 2 */}
             {/* {footerLinks.map(({ title, links }) => (
@@ -133,13 +125,20 @@ export default function Footer() {
             <p className="text-center text-brand-600">
               &copy; 2023 opulent, Inc. All rights reserved.
             </p>
-            <Link
+            <div className="flex items-center italic gap-1 self-end">
+              <h6 className="text-brand-600">Powered By</h6>
+              <div className="relative w-11 h-4">
+                <Link href="https://stripe.com/">
+                  <Image src="/stripe-logo.svg" alt="stripe logo" fill />
+                </Link>
+              </div>
+            </div>
+            {/* <Link
               href="https://github.com/Abdelmuttalib/Opulent"
               className="text-brand-600 hover:text-brand-400 underline decoration-2 decoration-brand-600 underline-offset-2"
             >
-              {/* <GitHubIcon /> */}
               <span>GitHub</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

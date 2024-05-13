@@ -18,7 +18,17 @@ const NavbarActions = () => {
   const cart = useCart();
 
   if (!isMounted) {
-    return null;
+    return (
+      <div className="flex items-center gap-x-4">
+        <div>
+          <Heart className="text-brand w-6 h-6" />
+        </div>
+        <div className="flex items-center bg-brand p-[11px] rounded">
+          <ShoppingBag size={20} color="white" />
+          <span className="ml-2 text-sm text-white">0</span>
+        </div>
+      </div>
+    );
   }
 
   return (
