@@ -7,7 +7,7 @@ export const revalidate = 0;
 
 export default async function Home() {
   const billboard = await actions.billboards.getBillboard(
-    "8a1bbaa9-3d46-441f-a49c-64f0969e4fe0"
+    "38351b6c-1d05-4a94-a532-0af9417abb21"
   );
 
   const products = await actions.products.getProducts({
