@@ -25,7 +25,9 @@ export default function FavoritesPage() {
     <div className="bg-white">
       <Container>
         <div className="px-4 py-16 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold text-black">Favorites</h1>
+          <h1 className="text-3xl font-normal w-fit text-brand hover:bg-brand hover:text-white ease-in-out duration-300">
+            Favorites
+          </h1>
           <div className="mt-12 lg:grid lg:items-start gap-x-12">
             <div>
               {favorites.items.length === 0 && (

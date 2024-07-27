@@ -1,7 +1,7 @@
-import { Billboard } from "@/types";
+import { Billboard as BillboardType } from "@/types";
 
 interface BillboardProps {
-  data: Billboard;
+  data: BillboardType;
 }
 
 export default function Billboard({ data }: BillboardProps) {
