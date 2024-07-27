@@ -25,7 +25,6 @@ export default function RootLayout({
       >
         {/* Providers */}
         <Providers />
-        {/*  */}
         <Navbar />
         <main className="min-h-main pb-40">{children}</main>
         <Footer />
