@@ -1,17 +1,14 @@
-import { Category } from "@/types";
+// actions/get-categories.ts
 
-const URL = `${process.env.NEXT_PUBLIC_API_URL}/categories`;
+import type { Category } from "@/types";
+import { categoriesData } from "@/lib/data";
 
-const getCategories = async (): Promise<Category[]> => {
-  const res = await fetch(URL);
-
-  return res.json();
+const getCategories = (): Category[] => {
+  return categoriesData;
 };
 
-const getCategory = async (id: string): Promise<Category> => {
-  const res = await fetch(`${URL}/${id}`);
-
-  return res.json();
+const getCategory = (id: string): Category | undefined => {
+  return categoriesData.find((category) => category.id === id);
 };
 
 const categories = {

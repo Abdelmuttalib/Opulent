@@ -39,7 +39,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <ProductsList
             title="Related Items"
             products={suggestedProducts.filter(
-              (suggestedProduct) => suggestedProduct.id !== product.id
+              (suggestedProduct) => suggestedProduct.id !== product.id,
             )}
           />
         </div>
