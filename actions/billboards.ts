@@ -1,11 +1,10 @@
+import { billboardsData } from "@/lib/data";
 import { Billboard } from "@/types";
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/billboards`;
 
-const getBillboard = async (id: string): Promise<Billboard> => {
-  const res = await fetch(`${URL}/${id}`);
-
-  return res.json();
+const getBillboard = (id: string): Billboard | undefined => {
+  return billboardsData.find((billboard) => billboard.id === id);
 };
 
 const billboards = {
